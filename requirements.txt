@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+xgboost
+scikit-learn
+matplotlib
+seaborn
+tensorflow
+plotly
+fastapi
+uvicorn
+fpdf2
+requests
+shap
