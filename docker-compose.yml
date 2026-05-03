@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  parkiq:
+    build: .
+    container_name: parkiq_command_center
+    ports:
+      - "8501:8501"  # Streamlit
+      - "8000:8000"  # FastAPI
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - API_HOST=0.0.0.0
+    restart: unless-stopped
